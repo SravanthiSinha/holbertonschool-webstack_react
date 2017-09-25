@@ -1,0 +1,17 @@
+{
+  "name": "2-webpack-app",
+  "version": "1.0.0",
+  "description": " sets the text of h1 tag to \"Holberton School\"",
+  "main": "index.js",
+  "repository": "https://github.com/SravanthiSinha/holbertonschool-webstack_react/tree/master/0x00-intro",
+  "author": "Sravanthi Sinha",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "path": "^0.12.7",
+    "webpack": "^3.6.0"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  }
+}

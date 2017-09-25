@@ -1,0 +1,17 @@
+{
+  "name": "0-web-pack-app",
+  "version": "1.0.0",
+  "description": "prints in stdout \"Holberton school\"",
+  "main": "index.js",
+  "repository": "https://github.com/SravanthiSinha/holbertonschool-webstack_react",
+  "author": "Sravanthi Sinha",
+  "license": "No",
+  "private": false,
+  "dependencies": {
+    "path": "^0.12.7",
+    "webpack": "^3.6.0"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  }
+}

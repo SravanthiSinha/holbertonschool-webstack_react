@@ -1,0 +1,21 @@
+{
+  "name": "7-jquery_template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/SravanthiSinha/holbertonschool-webstack_react/tree/master/0x00-intro",
+  "author": "Sravanthi Sinha",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "path": "^0.12.7",
+    "webpack": "^3.6.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.8.2",
+    "html-webpack-plugin": "^2.30.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --host 0.0.0.0 --port 5000"
+  }
+}
