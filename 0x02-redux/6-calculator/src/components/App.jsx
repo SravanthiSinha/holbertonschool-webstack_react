@@ -1,7 +1,7 @@
 import React from 'react';
 import Result from './Result.jsx';
 import PadNumber from '../containers/PadNumber.jsx';
-import PadOperator from './PadOperator.jsx';
+import PadOperator from '../containers/PadOperator.jsx';
 import {connect} from 'react-redux';
 
 class App extends React.Component {
