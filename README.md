@@ -12,3 +12,11 @@ Each project
  * 0x00. React - intro
 
     A project focused to getting started with React
+
+ * 0x01. React - state
+
+    A project focused to handle state in React Application.
+    
+ * 0x02. React - redux
+
+    A project focused to undertsand Redux with React.
