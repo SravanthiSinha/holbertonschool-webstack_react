@@ -10,7 +10,7 @@ class AppComponent extends React.Component {
     return (
       <div>
         <Button text="Fetching..." fct={() => this.props.fetching()}/>
-        <Button text="Reset" fct={() => this.props.reset("OK")}/>
+        <Button text="Reset" fct={() => this.props.reset()}/>
         <hr/>
         <Loader is_loading={this.props.is_fetching}/>
         <Status display={!this.props.is_fetching} value={this.props.status}/>
@@ -31,8 +31,8 @@ const mapDispatchToProps = dispatch => {
         dispatch({type: 'FETCHING', is_fetching: false, status: response.statusText})
       })
     },
-    reset: (status) => {
-      dispatch({type: 'RESET', status})
+    reset: () => {
+      dispatch({type: 'RESET'})
     }
   }
 }
