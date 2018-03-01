@@ -9,10 +9,10 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
-    "redux-thunk": "^2.2.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
     "webpack": "^3.6.0"
   },
   "scripts": {
@@ -26,6 +26,7 @@
     "babel-preset-react": "^6.24.1",
     "file-loader": "^1.1.5",
     "url-loader": "^0.6.2",
+    "webpack-cli": "^2.0.9",
     "webpack-dev-server": "^2.9.5"
   }
 }
