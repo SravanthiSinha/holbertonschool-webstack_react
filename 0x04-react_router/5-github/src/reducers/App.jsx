@@ -1,7 +1,7 @@
 const initialState = {
   repos: {},
-  is_fetching_repos: false,
-  is_fetching_commits: false,
+  is_fetching_repos: true,
+  is_fetching_commits: true,
   commits: {}
 }
 

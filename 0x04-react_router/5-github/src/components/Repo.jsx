@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {fetchCommits} from '../actions/Actions.jsx';
 import {Link} from 'react-router-dom'
+import Loader from './Loader.jsx';
 
 class Repo extends React.Component {
   constructor(props) {
@@ -15,10 +16,7 @@ class Repo extends React.Component {
     this.props.fetchCommits(this._reponame)
   }
   render() {
-    if (this.props.is_fetching) {
-      console.log(this.props)
-      return (<Loader is_loading={this.props.is_fetching}/>)
-    } else {
+    if (!this.props.is_fetching) {
       var commits = [];
       for (var key in this.props.commits) {
         commits.push(<li key={key}>
@@ -38,6 +36,8 @@ class Repo extends React.Component {
           <h1>Nothing</h1>
         </div>)
       }
+    } else {
+      return (<Loader is_loading={this.props.is_fetching}/>)
     }
   }
 }

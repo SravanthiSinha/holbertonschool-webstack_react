@@ -10,10 +10,7 @@ class Repos extends React.Component {
     this.props.fetchRepos()
   }
   render() {
-    if (this.props.is_fetching) {
-      console.log(this.props.is_fetching)
-      return (<Loader is_loading={this.props.is_fetching}/>)
-    } else {
+    if (!this.props.is_fetching) {
       var repos = [];
       for (var key in this.props.repos) {
         repos.push(<li key={key}>
@@ -25,11 +22,8 @@ class Repos extends React.Component {
           <h1>Repositories:</h1>
           <ul>{repos}</ul>
         </div>)
-      else {
-        return (<div>
-          <h1>Nothing</h1>
-        </div>)
-      }
+    } else {
+      return (<Loader is_loading={this.props.is_fetching}/>)
     }
   }
 }
